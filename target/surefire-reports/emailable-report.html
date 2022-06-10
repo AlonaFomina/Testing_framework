@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Command line suite</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">115,728</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Command line suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">scripts._03_EtsyTest</td><td><a href="#m0">testMainHeader</a></td><td rowspan="1">1654215205168</td><td rowspan="1">2728</td></tr><tr class="failedodd"><td rowspan="1">scripts._07_DropdownTest</td><td><a href="#m1">testExpediaDropDowns</a></td><td rowspan="1">1654215222576</td><td rowspan="1">32783</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">scripts._01_AppleTest</td><td><a href="#m2">testAppleTitle</a></td><td rowspan="1">1654215273228</td><td rowspan="1">1317</td></tr><tr class="passedeven"><td><a href="#m3">testAppleURL</a></td><td rowspan="1">1654215276243</td><td rowspan="1">1543</td></tr><tr class="passedodd"><td rowspan="1">scripts._02_TechGlobalTest</td><td><a href="#m4">testAplicationFormHeading</a></td><td rowspan="1">1654215259212</td><td rowspan="1">1415</td></tr><tr class="passedeven"><td rowspan="3">scripts._03_EtsyTest</td><td><a href="#m5">testEtsyLogo</a></td><td rowspan="1">1654215187500</td><td rowspan="1">3498</td></tr><tr class="passedeven"><td><a href="#m6">testEtsySearch</a></td><td rowspan="1">1654215192752</td><td rowspan="1">3114</td></tr><tr class="passedeven"><td><a href="#m7">testEtsySearchResult</a></td><td rowspan="1">1654215197457</td><td rowspan="1">6039</td></tr><tr class="passedodd"><td rowspan="2">scripts._04GoogleSearchTest</td><td><a href="#m8">testGoogleSearch</a></td><td rowspan="1">1654215262156</td><td rowspan="1">4120</td></tr><tr class="passedodd"><td><a href="#m9">testGoogleStoreLink</a></td><td rowspan="1">1654215267892</td><td rowspan="1">3623</td></tr><tr class="passedeven"><td rowspan="1">scripts._05_CheckBoxTest</td><td><a href="#m10">testCheckBoxInHeroApp</a></td><td rowspan="1">1654215279534</td><td rowspan="1">1201</td></tr><tr class="passedodd"><td rowspan="2">scripts._06_RadioButtonTest</td><td><a href="#m11">creatingANewAccount</a></td><td rowspan="1">1654215282383</td><td rowspan="1">3769</td></tr><tr class="passedodd"><td><a href="#m12">testFacebookRadioButton</a></td><td rowspan="1">1654215287898</td><td rowspan="1">9925</td></tr><tr class="passedeven"><td rowspan="2">scripts._07_DropdownTest</td><td><a href="#m13">testEbayDropdown</a></td><td rowspan="1">1654215257697</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m14">testUnsecurePasswordErrorMessage</a></td><td rowspan="1">1654215209557</td><td rowspan="1">11494</td></tr></tbody>
+</table>
+<h2>Command line test</h2><h3 id="m0">scripts._03_EtsyTest#testMainHeader</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Father&apos;s Day Gifts] but found [Shop Home Sales!]
+	at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">scripts._07_DropdownTest#testExpediaDropDowns</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Alonas-Air.local.tld&apos;, ip: &apos;fe80:0:0:0:1c87:cc4a:7d8f:b309%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;18.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/t9/f35_jmtd6zz...}, goog:chromeOptions: {debuggerAddress: localhost:61224}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3c58c27c22f70e99c1aa131154db1182
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at utilities.Waiter.waitForVisibilityOfElement(Waiter.java:20)
+	at scripts._07_DropdownTest.testExpediaDropDowns(_07_DropdownTest.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">scripts._01_AppleTest#testAppleTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">scripts._01_AppleTest#testAppleURL</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">scripts._02_TechGlobalTest#testAplicationFormHeading</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">scripts._03_EtsyTest#testEtsyLogo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">scripts._03_EtsyTest#testEtsySearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">scripts._03_EtsyTest#testEtsySearchResult</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">scripts._04GoogleSearchTest#testGoogleSearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">scripts._04GoogleSearchTest#testGoogleStoreLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">scripts._05_CheckBoxTest#testCheckBoxInHeroApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">scripts._06_RadioButtonTest#creatingANewAccount</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">scripts._06_RadioButtonTest#testFacebookRadioButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">scripts._07_DropdownTest#testEbayDropdown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">scripts._07_DropdownTest#testUnsecurePasswordErrorMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
