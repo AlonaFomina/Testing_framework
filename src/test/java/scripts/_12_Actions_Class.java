@@ -50,6 +50,7 @@ public class _12_Actions_Class extends Base{
         driver.get("https://www.techglobalschool.com/");
 
         WebElement registerForIntroButton  = driver.findElement(By.xpath("//div[@id='comp-kvjohd5t5']/a"));
+
         Actions actions = new Actions(driver);
 
         actions.moveToElement(registerForIntroButton).build().perform();
@@ -57,6 +58,5 @@ public class _12_Actions_Class extends Base{
         actions.click(registerForIntroButton).build().perform();
 
         Assert.assertEquals(driver.getCurrentUrl(),"https://www.techglobalschool.com/apply-now-1");
-
     }
 }
