@@ -12,14 +12,15 @@ public class HeroAppPage {
         PageFactory.initElements(driver, this);
     }
 
+
     @FindBy(xpath = "//ul/li/a")
-    public List<WebElement> homepageLinks;
+    public List<WebElement> links;
 
     @FindBy(css = "#checkboxes>input")
     public List<WebElement> checkboxes;
 
     @FindBy(xpath = "//ul//button")
-    public List<WebElement>alertButtons;
+    public List<WebElement> alertButtons;
 
     @FindBy(id = "result")
     public WebElement resultParagraph;
@@ -33,17 +34,20 @@ public class HeroAppPage {
     @FindBy(xpath = "//h3")
     public WebElement iFrameHeading3;
 
+    @FindBy(id = "mce_0_ifr")
+    public WebElement innerIFrame;
+
     @FindBy(css = "#content a")
     public WebElement clickHereLink;
 
-    @FindBy(xpath = "//h3")
+    @FindBy(css = "#content h3")
     public WebElement windowsH3;
 
-    @FindBy(xpath = "//body//h3[.='New Window']")
+    @FindBy(xpath = "//h3")
     public WebElement newWindowH3;
 
     @FindBy(id = "file-upload")
-    public WebElement choseFileInputBox;
+    public WebElement chooseFileInputBox;
 
     @FindBy(id = "file-submit")
     public WebElement uploadFileButton;
@@ -54,13 +58,14 @@ public class HeroAppPage {
     @FindBy(id = "uploaded-files")
     public WebElement uploadedFileText;
 
-    @FindBy(xpath = "//div[@id='content']//a[@href='download/AFKnopa.txt']")
-    public WebElement AFKnopa;
+    @FindBy(linkText = "myFileTech2.xls")
+    public WebElement downloadFileLink;
 
-
+    @FindBy(xpath = "//table[@id='table1']//th")
+    public List<WebElement> headings;
 
     public void clickOnLink(String linkText) {
-        for (WebElement link : homepageLinks) {
+        for (WebElement link : links) {
             if (link.getText().equals(linkText)) {
                 link.click();
                 break;
@@ -68,13 +73,14 @@ public class HeroAppPage {
         }
     }
 
-    public void clickOnAlertButton(String buttonText){
-        for(WebElement element: alertButtons){
-            if(element.getText().equals(buttonText)){
+    public void clickOnAlertButton(String buttonText) {
+        for (WebElement element : alertButtons) {
+            if (element.getText().equals(buttonText)) {
                 element.click();
                 break;
             }
         }
     }
+
 
 }

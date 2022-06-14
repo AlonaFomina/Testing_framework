@@ -27,4 +27,7 @@ public class Waiter {
     public static void  waitForUntilTextToBEPresentInElement(WebDriver driver,int seconds, WebElement element, String text){
         new WebDriverWait(driver,seconds).until(ExpectedConditions.textToBePresentInElement(element,text));
     }
+
+    public static void waitUntilTextToBePresentInElement(WebDriver driver, int i, WebElement element, String s) {
+    }
 }

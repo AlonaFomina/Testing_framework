@@ -20,7 +20,13 @@
             </class>
             <class name="scripts._05_CheckBoxTest"/>
             <class name="scripts._06_RadioButtonTest"/>
+            <class name="scripts._010_WindowHandles"/>
             <class name="scripts._07_DropdownTest"/>
+            <class name="scripts._08_Alerts_Test"/>
+            <class name="scripts._09_Iframes"/>
+            <class name="scripts._010_WindowHandles"/>
+            <class name="scripts._11_FileUpload_Test"/>
+            <class name="scripts._12_Actions_Class"/>
         </classes>
     </test>
 </suite>

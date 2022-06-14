@@ -1,5 +1,6 @@
 package scripts;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.FluentWait;
@@ -30,6 +31,7 @@ public class Base {
     AmazonPage amazonPage;
     RediffHomePage rediffHomePage;
     TGHomePage tgHomePage;
+    JavascriptExecutor js;
 
     @BeforeMethod
     public void setup() {
@@ -49,6 +51,7 @@ public class Base {
         rediffHomePage = new RediffHomePage(driver);
         tgHomePage = new TGHomePage(driver);
         actions = new Actions(driver);
+        js = (JavascriptExecutor) driver;
     }
 
     @AfterMethod

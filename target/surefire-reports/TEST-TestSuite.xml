@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="15" failures="2" name="TestSuite" time="86.572" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="265.39" tests="27" errors="0" skipped="0" failures="6">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="18.0.1+0"/>
@@ -18,8 +18,7 @@
     <property name="java.runtime.version" value="18.0.1+0"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.io.tmpdir" value="/var/folders/t9/f35_jmtd6zz6dl31_xnzkyrc0000gn/T/"/>
-    <property name="line.separator" value="
-"/>
+    <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Mac OS X"/>
     <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.8.5/libexec/bin/m2.conf"/>
@@ -41,7 +40,7 @@
     <property name="java.class.path" value="/usr/local/Cellar/maven/3.8.5/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="18"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test -PRegression"/>
     <property name="java.home" value="/usr/local/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home"/>
     <property name="apple.awt.application.name" value="Launcher"/>
     <property name="user.language" value="en"/>
@@ -62,81 +61,130 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="scripts._03_EtsyTest" name="testEtsyLogo" time="3.501"/>
-  <testcase classname="scripts._03_EtsyTest" name="testEtsySearch" time="3.113"/>
-  <testcase classname="scripts._03_EtsyTest" name="testEtsySearchResult" time="6.041"/>
-  <testcase classname="scripts._03_EtsyTest" name="testMainHeader" time="2.729">
-    <failure message="expected [Father&apos;s Day Gifts] but found [Shop Home Sales!]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Father&apos;s Day Gifts] but found [Shop Home Sales!]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:575)
-	at org.testng.Assert.assertEquals(Assert.java:585)
-	at scripts._03_EtsyTest.testMainHeader(_03_EtsyTest.java:73)
+  <testcase name="testAppleURL" classname="scripts._01_AppleTest" time="2.364"/>
+  <testcase name="testMainHeader" classname="scripts._03_EtsyTest" time="3.148"/>
+  <testcase name="testGoogleStoreLink" classname="scripts._04GoogleSearchTest" time="3.389"/>
+  <testcase name="testCheckBoxInHeroApp" classname="scripts._05_CheckBoxTest" time="1.455"/>
+  <testcase name="creatingANewAccount" classname="scripts._06_RadioButtonTest" time="3.371"/>
+  <testcase name="testFacebookRadioButton" classname="scripts._06_RadioButtonTest" time="10.248"/>
+  <testcase name="testEtsySingInModel" classname="scripts._08_Alerts_Test" time="4.202">
+    <failure message="expected [Sign in to continue] but found [Sign in]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Sign in to continue] but found [Sign in]
+	at scripts._08_Alerts_Test.testEtsySingInModel(_08_Alerts_Test.java:16)
 </failure>
-    <system-err>Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 21887
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 27262
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2022 7:13:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 11, 2022 2:37:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-</system-err>
+]]></system-err>
   </testcase>
-  <testcase classname="scripts._07_DropdownTest" name="testUnsecurePasswordErrorMessage" time="11.495"/>
-  <testcase classname="scripts._07_DropdownTest" name="testExpediaDropDowns" time="32.783">
-    <failure message="stale element reference: element is not attached to the page document
+  <testcase name="validateInformationWarningAlert" classname="scripts._08_Alerts_Test" time="11.292">
+    <failure message="no such alert&#10;  (Session info: chrome=102.0.5005.61)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Alonas-Air.local.tld&apos;, ip: &apos;fe80:0:0:0:1c87:cc4a:7d8f:b309%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;18.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/t9/f35_jmtd6zz...}, goog:chromeOptions: {debuggerAddress: localhost:54085}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 055317a311eed6bcaaa01b66688cb332" type="org.openqa.selenium.NoAlertPresentException">org.openqa.selenium.NoAlertPresentException: 
+no such alert
+  (Session info: chrome=102.0.5005.61)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Alonas-Air.local.tld', ip: 'fe80:0:0:0:1c87:cc4a:7d8f:b309%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '18.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/t9/f35_jmtd6zz...}, goog:chromeOptions: {debuggerAddress: localhost:54085}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 055317a311eed6bcaaa01b66688cb332
+	at scripts._08_Alerts_Test.validateInformationWarningAlert(_08_Alerts_Test.java:27)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 15777
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 11, 2022 2:37:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testConfirmationAlert" classname="scripts._08_Alerts_Test" time="1.685"/>
+  <testcase name="testPromptAlert" classname="scripts._08_Alerts_Test" time="3.741"/>
+  <testcase name="testAmazonAddressModal" classname="scripts._08_Alerts_Test" time="5.13">
+    <failure message="expected [60631] but found []" type="java.lang.AssertionError">java.lang.AssertionError: expected [60631] but found []
+	at scripts._08_Alerts_Test.testAmazonAddressModal(_08_Alerts_Test.java:103)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 38900
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 11, 2022 2:37:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testIframe1" classname="scripts._09_Iframes" time="2.075"/>
+  <testcase name="testIframe2" classname="scripts._09_Iframes" time="3.558"/>
+  <testcase name="techGlobalSchoolFaceBookIcon" classname="scripts._010_WindowHandles" time="7.502"/>
+  <testcase name="testWindowHandle2" classname="scripts._010_WindowHandles" time="1.508"/>
+  <testcase name="testFileUpload1" classname="scripts._11_FileUpload_Test" time="40.062">
+    <failure message="Cannot locate an element using xpath=//div[@id=&apos;content&apos;]//a[@href=&apos;download/AFKnopa.txt&apos;]&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Alonas-Air.local.tld&apos;, ip: &apos;fe80:0:0:0:1c87:cc4a:7d8f:b309%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;18.0.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using xpath=//div[@id='content']//a[@href='download/AFKnopa.txt']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Alonas-Air.local.tld', ip: 'fe80:0:0:0:1c87:cc4a:7d8f:b309%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '18.0.1'
+Driver info: driver.version: RemoteWebDriver
+	at scripts._11_FileUpload_Test.testFileUpload1(_11_FileUpload_Test.java:17)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 24610
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 11, 2022 2:38:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testFileDownloads" classname="scripts._11_FileUpload_Test" time="3.913"/>
+  <testcase name="moveToElementPractice1" classname="scripts._12_Actions_Class" time="4.048"/>
+  <testcase name="moveToElementPractice2" classname="scripts._12_Actions_Class" time="8.681"/>
+  <testcase name="clickOnRegisterForIntroButton" classname="scripts._12_Actions_Class" time="6.822"/>
+  <testcase name="rightClickAction" classname="scripts._12_Actions_Class" time="4.669"/>
+  <testcase name="clickAndHoldAction" classname="scripts._12_Actions_Class" time="5.577"/>
+  <testcase name="sendKeysToAnElement" classname="scripts._12_Actions_Class" time="1.563"/>
+  <testcase name="practiceKeyDownAndKeyUp" classname="scripts._12_Actions_Class" time="22.706">
+    <failure message="java.lang.reflect.InvocationTargetException&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Alonas-Air.local.tld&apos;, ip: &apos;fe80:0:0:0:1c87:cc4a:7d8f:b309%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;18.0.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.json.JsonException">org.openqa.selenium.json.JsonException: 
+java.lang.reflect.InvocationTargetException
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Alonas-Air.local.tld', ip: 'fe80:0:0:0:1c87:cc4a:7d8f:b309%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '18.0.1'
+Driver info: driver.version: RemoteWebDriver
+	at scripts._12_Actions_Class.practiceKeyDownAndKeyUp(_12_Actions_Class.java:115)
+Caused by: java.lang.reflect.InvocationTargetException
+	at scripts._12_Actions_Class.practiceKeyDownAndKeyUp(_12_Actions_Class.java:115)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using name=q
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Alonas-Air.local.tld', ip: 'fe80:0:0:0:1c87:cc4a:7d8f:b309%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '18.0.1'
+Driver info: driver.version: RemoteWebDriver
+	at scripts._12_Actions_Class.practiceKeyDownAndKeyUp(_12_Actions_Class.java:115)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 36461
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jun 11, 2022 2:40:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testUnsecurePasswordErrorMessage" classname="scripts._07_DropdownTest" time="12.624"/>
+  <testcase name="testExpediaDropDowns" classname="scripts._07_DropdownTest" time="24.239">
+    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=102.0.5005.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;Alonas-Air.local.tld&apos;, ip: &apos;fe80:0:0:0:1c87:cc4a:7d8f:b309%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;18.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/t9/f35_jmtd6zz...}, goog:chromeOptions: {debuggerAddress: localhost:55426}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a61376dd61c63d207e3e4cbf4084e3c9" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
   (Session info: chrome=102.0.5005.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Alonas-Air.local.tld&apos;, ip: &apos;fe80:0:0:0:1c87:cc4a:7d8f:b309%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;18.0.1&apos;
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Alonas-Air.local.tld', ip: 'fe80:0:0:0:1c87:cc4a:7d8f:b309%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.4', java.version: '18.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/t9/f35_jmtd6zz...}, goog:chromeOptions: {debuggerAddress: localhost:61224}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c58c27c22f70e99c1aa131154db1182" type="org.openqa.selenium.StaleElementReferenceException">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=102.0.5005.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;Alonas-Air.local.tld&apos;, ip: &apos;fe80:0:0:0:1c87:cc4a:7d8f:b309%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.4&apos;, java.version: &apos;18.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/t9/f35_jmtd6zz...}, goog:chromeOptions: {debuggerAddress: localhost:61224}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3c58c27c22f70e99c1aa131154db1182
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy9.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at utilities.Waiter.waitForVisibilityOfElement(Waiter.java:20)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/t9/f35_jmtd6zz...}, goog:chromeOptions: {debuggerAddress: localhost:55426}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a61376dd61c63d207e3e4cbf4084e3c9
 	at scripts._07_DropdownTest.testExpediaDropDowns(_07_DropdownTest.java:61)
 </failure>
-    <system-err>Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 30775
+    <system-err><![CDATA[Starting ChromeDriver 102.0.5005.61 (0e59bcc00cc4985ce39ad31c150065f159d95ad3-refs/branch-heads/5005@{#819}) on port 11814
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jun 02, 2022 7:13:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jun 11, 2022 2:40:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-</system-err>
+]]></system-err>
   </testcase>
-  <testcase classname="scripts._07_DropdownTest" name="testEbayDropdown" time="0"/>
-  <testcase classname="scripts._02_TechGlobalTest" name="testAplicationFormHeading" time="1.413"/>
-  <testcase classname="scripts._04GoogleSearchTest" name="testGoogleSearch" time="4.121"/>
-  <testcase classname="scripts._04GoogleSearchTest" name="testGoogleStoreLink" time="3.622"/>
-  <testcase classname="scripts._01_AppleTest" name="testAppleTitle" time="1.316"/>
-  <testcase classname="scripts._01_AppleTest" name="testAppleURL" time="1.542"/>
-  <testcase classname="scripts._05_CheckBoxTest" name="testCheckBoxInHeroApp" time="1.201"/>
-  <testcase classname="scripts._06_RadioButtonTest" name="creatingANewAccount" time="3.769"/>
-  <testcase classname="scripts._06_RadioButtonTest" name="testFacebookRadioButton" time="9.926"/>
+  <testcase name="testEbayDropdown" classname="scripts._07_DropdownTest" time="0"/>
 </testsuite>

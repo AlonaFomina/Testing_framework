@@ -10,11 +10,11 @@ public class _11_FileUpload_Test extends Base{
         driver.get("http://the-internet.herokuapp.com/");
         heroAppPage.clickOnLink("File Upload");
         Waiter.pause(3);
-        heroAppPage.choseFileInputBox.sendKeys("/Users/alonafomina/IdeaProjects/testing_framework/AFKnopa.txt");
+        heroAppPage.fileUploadedH3.sendKeys("/Users/alonafomina/IdeaProjects/testing_framework/AFKnopa.txt");
         Waiter.pause(3);
         heroAppPage.uploadFileButton.click();
         Waiter.pause(3);
-        heroAppPage.AFKnopa.click();
+
 
         //
 
